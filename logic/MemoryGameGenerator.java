@@ -16,6 +16,8 @@ public class MemoryGameGenerator {
 	}
 	public static Square[][] generateIntGame(int xAxis, int yAxis){
 		board = new Square[xAxis][yAxis];
+		
+		if((xAxis % 2) != 0 && (yAxis % 2) != 0) System.exit(1);
 		resetBoard();
 		bruteForce();
 		return board;	
