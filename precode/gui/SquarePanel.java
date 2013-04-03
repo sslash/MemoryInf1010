@@ -9,25 +9,9 @@ public class SquarePanel extends JPanel {
     private int length;
     private MemoryFrame mf;
 
-    public SquarePanel(Square[][] squares, MemoryFrame mf){
-	this.length = squares.length;
-	this.mf = mf;
-	layout = new GridLayout(length, length);
-	this.setLayout(layout);
-	
-	for ( int i = 0; i < length; i ++) {
-	    for ( int y = 0; y < length; y ++) {
-		SquareButton btn = new SquareButton(squares[i][y]);
-		btn.addActionListener(new ButtonListener());
-		this.add( btn );
-	    }
-	}	    
+    public SquarePanel(Square[][] squares, MemoryFrame mf){	    
     }
 
-
-    public void showSquare(SquareButton s) {
-	s.paintValue();
-    }
 
 
     class ButtonListener implements ActionListener {

@@ -4,13 +4,10 @@ import javax.swing.*;
 
 public class MemoryFrame extends JFrame {
     private GameController gc;
-    //private JPanel mainPanel;
     private SquarePanel squarePanel;
-    //private ResultsPanel resultsPanel;
 
     public MemoryFrame(GameController gc) {
 	this.gc = gc;
-	//mainPanel = new JPanel();
 	setTitle("Memory INF1010");
 	this.drawGame();
 	pack();
@@ -20,14 +17,8 @@ public class MemoryFrame extends JFrame {
     }
 
     private void drawGame() {
-	this.squarePanel = new SquarePanel(gc.getSquares(), this);
-	//this.mainPanel.add(resultsPanel);
-	//this.mainPanel.add(squarePanel);
-	//this.add(mainPanel);
-	this.add(squarePanel);
     }
 
     public void buttonClicked(SquareButton sb){
-	gc.buttonClicked(sb);
     }
 }
