@@ -34,7 +34,7 @@ public class MemoryGameGenerator {
 				int firX = r.nextInt(board.length);
 				int firY = r.nextInt(board[0].length);
 				if(freeSpot(firX, firY)){
-					board[firX][firY] = new Square(i+1);
+					board[firX][firY] = new Square(i+1, firX, firY);
 					placement++;
 				}
 			}
