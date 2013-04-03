@@ -10,3 +10,5 @@ Download the precode to do the implementation yourself.
 
 Execute the app by cloning the project and run:
 
+sh make.sh && java logic/Main
+
