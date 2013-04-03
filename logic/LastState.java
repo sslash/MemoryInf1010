@@ -19,7 +19,7 @@ public class LastState implements ClickState {
 	    gc.setLastSquare(square);
 	}else{
 	    gc.setBothSquaresEqual();
-	}
+	} 
 	
 	stateContext.setState(new FirstState(stateContext));
     }

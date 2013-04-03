@@ -26,7 +26,7 @@ public class MemoryGameGenerator {
 	private static void resetBoard(){
 		for(int i = 0; i < board.length; i++)
 			for(int j = 0; j < board[i].length; j++)
-				board[i][j] = new Square(-1);
+			    board[i][j] = new Square(-1,0,0);
 	}
 	private static void bruteForce(){
 		Random r = new Random();

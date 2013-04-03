@@ -16,10 +16,10 @@ public class SquareButton extends JButton {
     public Square getSquare() {
 	return square;
     }
-
+ 
     public void paintValue() {
-	System.out.println("CHANGING: " + square.getValue());
-	this.setText("" + square.getValue());	
+	this.setText("" + square.getValue());
+	this.setEnabled(false);
     }
 
     public void resetValue(){

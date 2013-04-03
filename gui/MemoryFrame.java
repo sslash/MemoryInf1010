@@ -13,7 +13,6 @@ public class MemoryFrame extends JFrame {
 	mainPanel = new JPanel();
 	setTitle("Memory INF1010");
 	this.drawGame();
-	//setSize(600, 800);
 	pack();
 	setLocationRelativeTo(null);
 	setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -21,11 +20,14 @@ public class MemoryFrame extends JFrame {
     }
 
     private void drawGame() {
-	this.squarePanel = new SquarePanel(gc.getSquares());
+	this.squarePanel = new SquarePanel(gc.getSquares(), this);
 	this.resultsPanel = new ResultsPanel();
 	this.mainPanel.add(resultsPanel);
 	this.mainPanel.add(squarePanel);
 	this.add(mainPanel);
+    }
 
+    public void buttonClicked(SquareButton sb){
+	gc.buttonClicked(sb);
     }
 }

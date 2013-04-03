@@ -26,11 +26,6 @@ public class SquarePanel extends JPanel {
 
 
     public void showSquare(SquareButton s) {
-	//int x = s.getXIndex();
-	//int y = s.getYIndex();
-	//int index = x*length + y;
-	//SquareButton btnClicked = (SquareButton)this.getComponents()[index];
-	//btnClicked.setValue();
 	s.paintValue();
     }
 
@@ -38,8 +33,7 @@ public class SquarePanel extends JPanel {
     class ButtonListener implements ActionListener {
     
 	public void actionPerformed(ActionEvent e) { 
-	    SquareButton square = (SquareButton) e.getSource();	    
-	    System.out.println("sap " + square.getSquare().getValue() );	    
+	    SquareButton square = (SquareButton) e.getSource();	    	    
 	    mf.buttonClicked(square);
 	}
     }
