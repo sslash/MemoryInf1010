@@ -6,7 +6,7 @@ public class MemoryGameGenerator {
 	static Square[][] board;
 	
 	
-	public static void main(String[] args){
+	public static void testBruteForcer(){
 		Square[][] test = generateIntGame(4);
 		for(int i = 0; i < board.length; i++){
 			for(int j = 0; j < board[i].length; j++)
