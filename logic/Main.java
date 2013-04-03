@@ -7,7 +7,8 @@ import javax.swing.SwingUtilities;
 public class Main {
 
     public static void main(String args[] ){
-
+	
+		
 	// Start the logic progam
 	final GameController game = new GameController();
 	game.initGame();
